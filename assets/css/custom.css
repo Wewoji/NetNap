@@ -1856,7 +1856,7 @@ textarea.is-invalid {
   padding-top: 40px;
   display: block;
   text-align: center;
-  background-color: var(--smoke-color2);
+  background-color: #3d9c72;
 }
 
 .th-menu-wrapper .mobile-logo svg {
