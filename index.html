@@ -876,8 +876,12 @@ appointment Area
 ==============================-->
     <section class="overflow-hidden ">
         <div class="container th-container4">
-            <div class="appointment-area th-radius3 position-relative overflow-hidden" data-bg-src="assets/img/bg/appointment_bg_3.jpg">
-                <h1>APP COMING SOON</h1>
+            <div class="appointment-area th-radius3 position-relative overflow-hidden" data-bg-src="assets/img/bg/appointment_bg_3.jpg" style="margin-bottom: 80px;">
+                <h1 style="
+                    color: rgb(0, 255, 13) !important;
+                    text-align: center;
+                    margin-bottom: .8em;">
+                    APP COMING SOON</h1>
                 <div class="tick" data-did-init="handleTickInit">
                     <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
                         <div class="tick-group">
@@ -1010,7 +1014,7 @@ appointment Area
     <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
     <script>
         function handleTickInit(tick) {
-            var counter = Tick.count.down('2024-12-24T20:00:00');
+            var counter = Tick.count.down(new Date(new Date().getFullYear() + 1, 0, 1));
             counter.onupdate = function(value) {
               tick.value = value;
             };
